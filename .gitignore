@@ -78,6 +78,9 @@ venv.bak/
 # Project specific
 *.log
 
+# Workshop documentation (exclude from repo)
+documents/
+
 
 # Coverage and testing
 .coverage
