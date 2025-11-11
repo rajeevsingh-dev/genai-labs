@@ -286,5 +286,21 @@ Please open issues or submit pull requests to suggest improvements, corrections,
 
 ---
 
+## License
+
+This project is licensed under the MIT License. That means you can:
+
+- Use the code for personal, educational, or commercial projects
+- Modify and distribute it
+- Keep attribution by retaining the original copyright notice
+
+Limitations and responsibilities:
+- The software is provided "as is" without warranty of any kind
+- Authors are not liable for any damages resulting from its use
+
+See the full license text in the [`LICENSE`](LICENSE) file.
+
+---
+
 **Happy learning — build responsibly and enjoy exploring GenAI and Azure AI!** 🚀
 
