@@ -71,7 +71,7 @@ By the end of this workshop participants will be able to:
 ```powershell
 # Clone the repository
 git clone <repo-url>
-cd gen-ai-labs
+cd genai-labs
 
 # Open in VS Code
 code .
@@ -107,159 +107,14 @@ Each lab folder contains an `example.env` file. Copy it to `.env` and update wit
 
 ## Labs Overview
 
-### Lab 1: Azure AI Multi‑Service & Document Intelligence Quickstart
+Ultra‑brief summaries — open each lab for full instructions:
 
-**Goal:** Provision an Azure AI multi‑service (Cognitive Services) resource and use the online Document Intelligence & Vision studios to run an OCR/Read analysis—no code required.
-
-**What you'll learn:**
-- Create / view a multi‑service Azure AI resource in the Portal
-- Locate endpoint and keys (and understand safe handling)
-- Use Document Intelligence Studio to extract text & structured fields (OCR/Read, Invoice, Receipt)
-- Explore Vision service demos for image understanding
-- Prepare environment variables for later coding labs
-
-**Key Outputs:**
-- Multi‑service resource ready for reuse in later labs
-- Successful OCR/Read analysis with JSON output inspected
-- Optional Invoice/Receipt extraction results
-
-📂 **Location:** [Lab1/Readme.md](Lab1/Readme.md)
-
-*Estimated time: 10–20 minutes*
-
----
-
-### Lab 2: Text Generating Apps
-
-**Goal:** Build interactive text-generating applications using Azure OpenAI.
-
-**What you'll learn:**
-- Connect to Azure OpenAI using Python SDK
-- Implement key-based authentication
-- Create basic chat completion applications
-- Build interactive Q&A chatbots
-- Handle errors and implement best practices
-
-**Key Outputs:**
-- Basic demo with static questions
-- Interactive chat application
-- Understanding of Azure OpenAI SDK patterns
-
-**Demos included:**
-- `azure_openai_demo1.py` - Basic connection demo
-- `azure_openai_demo2.py` - Interactive Q&A chat
-
-📂 **Location:** [Lab2/Readme.md](Lab2/Readme.md)
-
-*Estimated time: 60–90 minutes*
-
----
-
-### Lab 3: Your First ChatBot with RAG
-
-**Goal:** Implement a basic RAG pipeline that retrieves documents and generates contextual responses.
-
-**What you'll learn:**
-- Understand RAG concepts: Retrieval → Augmentation → Generation
-- Connect to Azure AI Search
-- Implement keyword-based document retrieval
-- Combine retrieved context with LLM generation
-- Add source citations to responses
-
-**Key Outputs:**
-- Search engine integration
-- Simple RAG implementation
-- Interactive RAG chatbot
-
-**Scripts included:**
-- `1.GetResults-from-SearchEngine.py` - Search foundation
-- `2.simple_rag.py` - Basic RAG demo
-- `3.simple_rag_interactive.py` - Interactive RAG
-
-📂 **Location:** [Lab3/Readme.md](Lab3/Readme.md)
-
-*Estimated time: 90–120 minutes*
-
----
-
-### Lab 4: Advance RAG
-
-**Goal:** Implement production-grade RAG with hybrid search and vector embeddings.
-
-**What you'll learn:**
-- Limitations of keyword-only search
-- Vector embeddings and semantic search
-- Hybrid search (keyword + vector)
-- Advanced prompt engineering
-- Production-ready error handling
-
-**Key Concepts:**
-- Semantic understanding vs. keyword matching
-- k-nearest neighbors (KNN) vector search
-- Combining multiple search strategies
-- Performance optimization
-
-📂 **Location:** [Lab4/README.md](Lab4/README.md)
-
-*Estimated time: 90–120 minutes*
-
----
-
-### Lab 5: RAG with a Front end API
-
-**Goal:** Build a production-ready RAG application with Gradio web interface.
-
-**What you'll learn:**
-- Create web-based chat interfaces with Gradio
-- Implement conversation history tracking
-- Add citation tracking and source attribution
-- Deploy to Azure App Service
-- Production readiness and best practices
-
-**Key Features:**
-- Interactive Gradio web UI
-- Real-time chat responses
-- Source citation display
-- Azure deployment guide
-
-**Topics covered:**
-- Production readiness
-- Sample architectures
-- AI landing zones
-- Deployment strategies
-
-📂 **Location:** [Lab5/readme.md](Lab5/readme.md)
-
-*Estimated time: 90–120 minutes*
-
----
-
-### Lab 6: Create your First Agent in AI Foundry
-
-**Goal:** Build and deploy AI agents using Azure AI Foundry Agent Service.
-
-**What you'll learn:**
-- What are AI agents and when to use them
-- Azure AI Foundry Agent Service overview
-- Create agents using the Foundry Portal
-- Build agents programmatically with Python SDK
-- Implement tool calling and connected agents
-- Explore Semantic Kernel integration
-
-**Key Topics:**
-- Agent vs. chatbot differences
-- Tool integration (Code Interpreter, Functions)
-- Multi-agent workflows
-- Enterprise features and governance
-
-**Implementation approaches:**
-- Portal-based agent creation (no-code)
-- Python SDK for programmatic control
-- Semantic Kernel for advanced orchestration
-
-📂 **Location:** [Lab6/README.md](Lab6/README.md)
-
-*Estimated time: 90–120 minutes*
+- **Lab 1:** Provision an Azure AI multi‑service resource & run OCR/Read in Document Intelligence Studio. → [Lab1](Lab1/Readme.md)
+- **Lab 2:** Azure OpenAI basics — chat + completions demos in Python. → [Lab2](Lab2/Readme.md)
+- **Lab 3:** Build a simple RAG chatbot (Search + retrieval + generation). → [Lab3](Lab3/Readme.md)
+- **Lab 4:** Advance RAG with embeddings & hybrid search strategies. → [Lab4](Lab4/README.md)
+- **Lab 5:** Production RAG web app (Gradio UI + deployment patterns). → [Lab5](Lab5/readme.md)
+- **Lab 6:** Create your first Azure AI Foundry agent & explore tool calling. → [Lab6](Lab6/README.md)
 
 ---
 
