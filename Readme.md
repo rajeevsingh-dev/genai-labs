@@ -107,14 +107,26 @@ Each lab folder contains an `example.env` file. Copy it to `.env` and update wit
 
 ## Labs Overview
 
-Ultra‑brief summaries — open each lab for full instructions:
+### Lab 1: Create your First Azure AI Service
+Provision a multi‑service Azure AI resource and run a no‑code OCR/Read demo. → [Open Lab 1](Lab1/Readme.md)
 
-- **Lab 1:** Provision an Azure AI multi‑service resource & run OCR/Read in Document Intelligence Studio. → [Lab1](Lab1/Readme.md)
-- **Lab 2:** Azure OpenAI basics — chat + completions demos in Python. → [Lab2](Lab2/Readme.md)
-- **Lab 3:** Build a simple RAG chatbot (Search + retrieval + generation). → [Lab3](Lab3/Readme.md)
-- **Lab 4:** Advance RAG with embeddings & hybrid search strategies. → [Lab4](Lab4/README.md)
-- **Lab 5:** Production RAG web app (Gradio UI + deployment patterns). → [Lab5](Lab5/readme.md)
-- **Lab 6:** Create your first Azure AI Foundry agent & explore tool calling. → [Lab6](Lab6/README.md)
+### Lab 2: Text Generating Apps
+Use Azure OpenAI from Python for basic chat & completions. → [Open Lab 2](Lab2/Readme.md)
+
+### Lab 3: Your First ChatBot with RAG
+Combine Azure AI Search retrieval with generation for a simple RAG chatbot. → [Open Lab 3](Lab3/Readme.md)
+
+### Lab 4: Advance RAG
+Enhance relevance using embeddings + hybrid search strategies. → [Open Lab 4](Lab4/README.md)
+
+### Lab 5: RAG with a Front end API
+Ship a Gradio web UI and discuss deployment considerations. → [Open Lab 5](Lab5/readme.md)
+
+### Lab 6: Create your First Agent in AI Foundry
+Build an AI Foundry agent and explore tool/function calling. → [Open Lab 6](Lab6/README.md)
+
+## Additional Resources & Next Steps
+Explore advanced agent orchestration, semantic ranking, and Responsible AI guidelines after completing the labs.
 
 ---
 
