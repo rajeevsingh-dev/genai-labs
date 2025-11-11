@@ -1,0 +1,19 @@
+# Azure OpenAI SDK
+openai>=1.0.0
+
+# Azure AI Search SDK  
+azure-search-documents>=11.4.0
+
+# Azure Core Libraries
+azure-core>=1.26.4
+azure-identity>=1.15.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional: For advanced RAG features
+# azure-storage-blob>=12.19.0    # If working with blob storage for documents
+# tiktoken                       # For token counting
+# pypdf                         # For PDF processing  
+# langchain>=0.1.0              # If using LangChain for RAG
+# semantic-kernel               # If using Semantic Kernel for RAG
