@@ -107,25 +107,25 @@ Each lab folder contains an `example.env` file. Copy it to `.env` and update wit
 
 ## Labs Overview
 
-### Lab 1: Create your First Azure AI Service
+### Lab 1: Azure AI Multi‑Service & Document Intelligence Quickstart
 
-**Goal:** Set up Azure OpenAI and Azure AI Search services, and verify connectivity.
+**Goal:** Provision an Azure AI multi‑service (Cognitive Services) resource and use the online Document Intelligence & Vision studios to run an OCR/Read analysis—no code required.
 
 **What you'll learn:**
-- Create Azure OpenAI resource via Azure Portal
-- Deploy GPT models and embedding models
-- Create Azure AI Search service
-- Configure environment variables
-- Test Azure OpenAI connection using Python SDK
+- Create / view a multi‑service Azure AI resource in the Portal
+- Locate endpoint and keys (and understand safe handling)
+- Use Document Intelligence Studio to extract text & structured fields (OCR/Read, Invoice, Receipt)
+- Explore Vision service demos for image understanding
+- Prepare environment variables for later coding labs
 
 **Key Outputs:**
-- Working Azure OpenAI resource
-- Deployed chat and embedding models
-- Azure AI Search service ready for indexing
+- Multi‑service resource ready for reuse in later labs
+- Successful OCR/Read analysis with JSON output inspected
+- Optional Invoice/Receipt extraction results
 
-📂 **Location:** [Lab1/ReadMe.md](Lab1/ReadMe.md)
+📂 **Location:** [Lab1/Readme.md](Lab1/Readme.md)
 
-*Estimated time: 60–90 minutes*
+*Estimated time: 10–20 minutes*
 
 ---
 
@@ -262,23 +262,6 @@ Each lab folder contains an `example.env` file. Copy it to `.env` and update wit
 *Estimated time: 90–120 minutes*
 
 ---
-
-## Additional Resources & Next Steps
-
-### Documentation
-- Each lab folder contains detailed `README.md` with step-by-step instructions
-- `example.env` files in each lab show required configuration
-- Error solutions available in `documents/` folder
-
-### Sample Data
-- Sample documents in `Lab-Data/` folder
-- Pre-configured for Northwind Benefits scenario
-
-### Next Steps
-- Explore advanced agent scenarios with Semantic Kernel
-- Implement custom tools and plugins
-- Build multi-agent systems
-- Deploy to production with Azure App Service
 
 ## Feedback and Contribution
 

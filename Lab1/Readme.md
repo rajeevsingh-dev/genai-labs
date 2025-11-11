@@ -1,110 +1,74 @@
-# Lab 1: Explore Azure AI Services
-
+## Lab 1: Azure AI Multi‑Service & Document Intelligence Quickstart
 
 Welcome to Lab 1! 
 
-In this lab, you'll see how AI can read documents automatically - no coding needed!
-
-
-## 🎯 Lab Objectives#
-
-### Step 1: Open the Website
-
-By the end of this lab, you will:By the end of this lab, you will:
-
-1. Go to: **https://documentintelligence.ai.azure.com/studio**
-
-2. Click **"Try it out"** (no login needed!)- Understand what Azure AI Document Intelligence can do- Explore Azure AI Foundry portal (unified AI services interface)
-
-
-
-### Step 2: Try Reading an Invoice- Extract text and tables from any document using Layout model- Explore Azure Document Intelligence for document processing
-
-
-
-1. Click on **"Invoice"**- Extract structured data from invoices automatically- Explore Azure AI Language for text analysis
-
-2. You'll see a sample invoice on the screen
-
-3. Click the **"Analyze"** button- Extract information from receipts- Explore Azure AI Speech for speech-to-text and text-to-speech
-
-4. Wait 3 seconds...
-
-5. **Look at the results!** AI found:- See real-world use cases for document automation- Explore Azure AI Vision for image analysis
-
-   - Company name
-
-   - Invoice number- Understand the different Azure AI services available
-
-   - Date
-
-   - All the items and prices## 📋 Prerequisites
-
-   - Total amount
-
-
-
-**Why this is cool**: Normally someone types all this by hand. AI does it in 3 seconds!- Web browser
-
-
-
-## ✅ You're Done!
-
-4. You'll see the main page with different prebuilt models2. Or directly visit: [https://ai.azure.com/explore/aiservices/vision](https://ai.azure.com/explore/aiservices/vision)
-
-
-
-## Next Lab
-Continue to Lab 2: [Text Generating Apps](../Lab2/Readme.md)
-
-- **Solution**: Most demos work without sign-in. If required, use your Azure account credentials
-
-## 📚 Additional Resources
-
-**Issue**: Upload limits on demo files
-
-- [Document Intelligence Studio](https://documentintelligence.ai.azure.com/studio)- **Solution**: Use smaller files or provided sample files for demos
-
-- [Azure Document Intelligence Overview](https://learn.microsoft.com/azure/ai-services/document-intelligence/overview)
-
-- [Document Intelligence Models](https://learn.microsoft.com/azure/ai-services/document-intelligence/concept-model-overview)**Issue**: Some features require Azure subscription
-
-- [Prebuilt Models Reference](https://learn.microsoft.com/azure/ai-services/document-intelligence/concept-invoice)- **Solution**: Many features have free demos. For full features, you'll need an active Azure subscription
-
-
-
-## ➡️ Next Steps**Issue**: Browser compatibility
-
-- **Solution**: Use latest version of Chrome, Edge, or Firefox for best experience
-
-Now that you've explored Azure Document Intelligence and seen how AI can process documents, you're ready to build applications using Azure OpenAI!
-
-## 🎓 What You Learned
-
-Proceed to **[Lab 2: Text Generating Apps](../Lab2/Readme.md)** to create your first Azure OpenAI resource and write Python code.
-
-
-**🎉 Congratulations on completing Lab 1!** You've seen how AI can automate document processing!- How Azure AI Language analyzes text for sentiment, entities, and key phrases
-
-## 📚 Additional Resources
-
-- [Azure AI Foundry Portal](https://ai.azure.com/)
-- [Azure AI Foundry Documentation](https://learn.microsoft.com/azure/ai-studio/)
-- [Azure AI Vision Overview](https://learn.microsoft.com/azure/ai-services/computer-vision/overview)
-- [Azure Document Intelligence Overview](https://learn.microsoft.com/azure/ai-services/document-intelligence/overview)
-- [Document Intelligence Studio](https://documentintelligence.ai.azure.com/studio)
-- [Azure AI Language Overview](https://learn.microsoft.com/azure/ai-services/language-service/overview)
-- [Azure AI Speech Overview](https://learn.microsoft.com/azure/ai-services/speech-service/overview)
-- [Azure OpenAI Service Overview](https://learn.microsoft.com/azure/ai-services/openai/overview)
-
-## ➡️ Next Steps
-
-Now that you've explored various Azure AI services through Azure AI Foundry, you're ready to build applications using Azure OpenAI!
-
-Proceed to **[Lab 2: Text Generating Apps](../Lab2/Readme.md)** to create your first Azure OpenAI resource and write Python code.
+This is a zero‑code, 10‑minute exploration of Azure AI using the Cognitive Services *multi‑service* resource and the online Document Intelligence.
 
 ---
+### 🎯 What You Will Do
+1. Create (or locate) an Azure AI multi‑service (Cognitive Services) resource.
+2. Open the Document Intelligence Studio and run an OCR/Read analysis.
+3. Understand where to find the endpoint and key (but do NOT paste real keys in files).
+4. Prepare for Lab 2 where we start writing code.
 
-**🎉 Congratulations on completing Lab 1!** 
+---
+### ✅ Prerequisites
+| Requirement | Notes |
+|-------------|-------|
+| Azure Subscription | Any pay‑as‑you‑go or enterprise sub with resource create rights |
+|  Resource | Cognitive Services multi‑service (SKU: Standard) |
 
-You've explored the power of Azure AI services through the unified Azure AI Foundry portal!
+
+---
+### 1. Create / View the Multi‑Service Resource
+If you do not already have one:
+1. Go to Azure Portal → Create Resource → Search "Cognitive Services" → Choose "Azure AI services (multi‑service)".
+2. Select Subscription, Resource Group (e.g. `rg-genai-labs`), Region, Pricing tier (Standard), and a name (e.g. `genai-ai-service-demo`).
+3. Review + Create → Wait for deployment.
+4. Open the resource after deployment. Note the: Endpoint URL and Key (Manage keys link).
+
+Once you create this service, you will see below services.
+Below is an example overview blade for the multi‑service resource showing tabs (Vision, Language, Speech, Document Intelligence, etc.):
+
+![Azure AI multi-service resource overview](images/azure-ai-services.png)
+
+
+---
+### 2. Open the Document Intelligence Studio
+Navigate to: https://documentintelligence.ai.azure.com/
+
+If prompted, select your Azure subscription + resource. Free "Try it out" samples may work without sign‑in for some models.
+
+You will see tiles like: OCR/Read, Layout, Invoices, Receipts, General Documents.
+
+---
+### 3. Run an OCR / Read Demo
+1. Click the "OCR/Read" (or "Layout") tile.
+2. Use the provided sample document OR upload a simple PDF/image (no sensitive info!).
+3. Click "Analyze".
+4. Observe results: extracted text, bounding boxes, page structure.
+5. Expand the JSON/output panel to see raw result structure (useful later for parsing in code).
+
+
+Add the link here to show the image
+DocInt.png
+Example of the Document Intelligence Studio after loading a sample invoice:
+
+![Document Intelligence Studio invoice analysis](images/DocInt.png)
+
+### Sample Output
+Below is a sample analysis result: the service extracted text lines, key fields (e.g., Invoice ID, Vendor, Total) and layout coordinates. In the portal you can open the JSON panel to inspect the raw structure you'll parse in later labs.
+
+![Invoice analysis result with extracted fields](images/run-analysis.png)
+
+---
+### 📚 Helpful Links
+- Document Intelligence Overview: https://learn.microsoft.com/azure/ai-services/document-intelligence/overview
+- Prebuilt Models: https://learn.microsoft.com/azure/ai-services/document-intelligence/concept-model-overview
+- Responsible AI: https://learn.microsoft.com/azure/responsible-ai/
+
+---
+### ➡️ Next Lab
+Proceed to **[Lab 2: Text Generating Apps](../Lab2/Readme.md)** where you'll connect to Azure OpenAI using Python and make your first API calls.
+
+**🎉 Great job!** You now understand how to provision a multi‑service resource and use Azure AI's prebuilt document extraction capabilities.
